@@ -1,0 +1,193 @@
+/* latin */
+@font-face {
+    font-family: 'Julius Sans One';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('../fonts/julius-sans-one-latin.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* latin */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url('../fonts/open-sans-latin.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-size: 13pt;
+    font-family: 'Open Sans', sans-serif;
+	background-color: #FAFAFA;
+}
+
+.body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+a {
+    outline: none;
+    text-decoration: underline;
+    color: #333;
+    transition: all .2s;
+    -o-transition: all .2s;
+    -ms-transition: all .2s;
+    -moz-transition: all .2s;
+    -webkit-transition: all .2s;
+}
+
+a:hover {
+    color: #000 !important;
+}
+
+h1 {
+	float: left;
+    font-size: 1.8em;
+}
+
+.center {
+	margin:  0 auto;
+	width: 700px;
+	max-width: 87%;
+}
+
+#site-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #FAFAFA;
+    border-bottom: 1px solid #EEE;
+    z-index: 100;
+}
+
+#page-title {
+	font-family: 'Julius Sans One', sans-serif;
+    font-weight: 400;
+}
+
+#site-nav {
+    float: right;
+    margin: 22px 15px 0 0;
+}
+
+#site-nav a {    
+    font-size: 1.1em;
+    text-decoration: none;
+}
+
+#site-nav a:not(:last-of-type) {
+    margin-right: 20px;
+}
+
+#site-nav a:hover {
+    color: #000;
+}
+
+#page-content {
+    flex: 1;
+    padding-top: 40px;
+    margin-top: 50px;
+}
+
+#projects {
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+.project {
+    display: flex;
+    margin-bottom: 20px;
+    width: 100%;
+    height: auto;
+    border: 1px solid #EEE;
+    border-radius: 3px;    
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+.p-img {
+    display: flex;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;    
+}
+
+.p-img img {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+
+.p-txt {
+    flex: 1;
+    padding: 20px 25px;
+}
+
+.p-title {
+    font-size: 1.3em;
+}
+
+.p-motto {
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.p-period {
+    margin-top: 25px;
+    font-size: 0.9em;
+}
+
+.strike {
+    margin-right: 15px;
+    text-decoration: line-through;
+}
+
+#criptowiki .p-img {
+    background-color: #37ED86;
+}
+
+#yousharetv .p-img {
+    background-color: #000000;
+}
+
+#resumenesorg .p-img {
+    background-color: #3AB572;
+}
+
+#zecurlcom .p-img {
+    background-color: #FFFFFF;
+}
+
+#anonchat .p-img {
+    background-color: #F3F3F3;
+}
+
+#site-footer {
+	flex: none;
+    margin-top: 30px;
+    width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+
+    .strike {
+        float: left;
+        width: 100%;
+    }
+
+}
