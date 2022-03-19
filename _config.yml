@@ -10,6 +10,9 @@ social:
 sass:
   style: compressed
 
+plugins:
+  - jekyll-sitemap
+
 compress_html:
   clippings: all
   comments: all
