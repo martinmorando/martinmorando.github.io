@@ -4,6 +4,9 @@ url: https://martinmorando.com
 language: es
 baseurl: ''
 
+social:
+  github: martinmorando
+
 sass:
   style: compressed
 
