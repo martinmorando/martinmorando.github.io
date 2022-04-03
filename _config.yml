@@ -1,11 +1,19 @@
 title: Martín Morando
-description: "Martín Morando, founder of cripto.wiki. Previously: YouShare.TV, Resumenes.org, AnonChat and more."
+description: "Martín Morando, fundador de cripto.wiki. Previamente: YouShare.TV, Resumenes.org, AnonChat y más."
 url: https://martinmorando.com
 language: es
 baseurl: ''
 
+permalink: /:title
+
 social:
   github: martinmorando
+
+defaults:
+  - scope:
+      path: '_posts'
+    values:
+      layout: 'post'
 
 sass:
   style: compressed
@@ -21,7 +29,7 @@ compress_html:
   blanklines: false
   profile: false
   ignore:
-    envs: [development] # bundle exec jekyll serve JEKYLL_ENV=development
+    envs: [development]
 
 include: [CNAME]
 exclude: [martinmorando.gemspec]

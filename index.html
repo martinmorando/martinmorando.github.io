@@ -1,27 +1,37 @@
 ---
+title: "Martín Morando"
 layout: page
 css: index
 ---
 
-<h2>Projects</h2>
+<h2>Proyectos</h2>
 <div id="projects">
 	<div class="project" id="criptowiki">
 		<div class="p-img"><img src="{{ site.baseurl }}/assets/img/projects/criptowiki-128x128.png" alt="cripto.wiki"/></div>
 		<div class="p-txt">
 			<div class="p-title"><a href="https://cripto.wiki/">cripto.wiki</a></div>
-			<div class="p-motto">Deciphering the world of Bitcoin, privacy and cybersecurity</div>
-			<div class="p-period">February 2019 – Present</div>
+			<div class="p-motto">Descifrando el mundo de Bitcoin, privacidad y ciberseguridad</div>
+			<div class="p-period">Febrero 2019 – Presente</div>
 		</div>
 	</div>
 </div>
 
-<h2><span class="strike">Failed Projects</span>Experience</h2>
+<div id="blog">
+	<h2>Blog</h2>
+	<ul>
+		{% for post in site.posts %}
+		   	<li><span>{{ post.date | date: '%Y/%m' }}</span><a href="{{ post.url }}">{{ post.title }}</a></li>
+	    {% endfor %}
+	</ul>
+</div>
+
+<h2><span class="strike">Proyectos fallidos</span>Experiencia</h2>
 <div id="previous-projects">
 	<div class="project" id="yousharetv">
 		<div class="p-img"><img src="{{ site.baseurl }}/assets/img/projects/yousharetv-128x128.png" alt="YouShare.TV"/></div>
 		<div class="p-txt">
 			<div class="p-title">YouShare.TV</div>
-			<div class="p-motto">Search and watch videos from YouTube, Vimeo and Dailymotion</div>
+			<div class="p-motto">Busca y mira videos de YouTube, Vimeo y Dailymotion</div>
 			<div class="p-period">2014 – 2018</div>
 		</div>
 	</div>
@@ -29,7 +39,7 @@ css: index
 		<div class="p-img"><img src="{{ site.baseurl }}/assets/img/projects/resumenesorg-128x128.png" alt="Resumenes.org"/></div>
 		<div class="p-txt">
 			<div class="p-title">Resumenes.org</div>
-			<div class="p-motto">The best online summaries</div>
+			<div class="p-motto">Los mejores resúmenes online</div>
 			<div class="p-period">2014 – 2015</div>
 		</div>
 	</div>
@@ -37,7 +47,7 @@ css: index
 		<div class="p-img"><img src="{{ site.baseurl }}/assets/img/projects/zecurl-128x128.png" alt="Zecurl.com"/></div>
 		<div class="p-txt">
 			<div class="p-title">Zecurl.com</div>
-			<div class="p-motto">Send confidential information across the Internet</div>
+			<div class="p-motto">Envía información confidencial a través de Internet</div>
 			<div class="p-period">2014 – 2015</div>
 		</div>
 	</div>
@@ -45,7 +55,7 @@ css: index
 		<div class="p-img"><img src="{{ site.baseurl }}/assets/img/projects/anonchat-128x89.png" alt="AnonChat"/></div>
 		<div class="p-txt">
 			<div class="p-title">AnonChat</div>
-			<div class="p-motto">Escape Big Brother</div>
+			<div class="p-motto">Escapa del Gran Hermano</div>
 			<div class="p-period">2013 – 2014</div>
 		</div>
 	</div>

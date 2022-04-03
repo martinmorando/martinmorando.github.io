@@ -6,7 +6,15 @@
 	<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/main.css">
 	<link rel="shortcut icon" type="image/x-icon" href="{{ site.baseurl }}/assets/img/icons/favicon.ico?v=2"/>
 	<link rel="shortcut icon" href="{{ site.baseurl }}/assets/img/icons/favicon.ico?v=2" />
-	<title>Martín Morando</title>
+	<title>{{ page.title }}</title>
+
+	{% if page.css %}
+        <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/{{ page.css }}.css" />
+    {% endif %}
+
+	{% if layout.css %}
+        <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/{{ layout.css }}.css" />
+    {% endif %}
 
 	<!-- jekyll-seo-tag -->
 	{% seo %}
