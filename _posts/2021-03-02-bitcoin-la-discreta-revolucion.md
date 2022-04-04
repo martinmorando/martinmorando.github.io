@@ -1,5 +1,6 @@
 ---
 title: "Bitcoin: La discreta revolución"
+image: assets/img/posts/2021/03/02-bitcoin-la-discreta-revolucion.png
 source_url: https://martinmorando.medium.com/bitcoin-la-discreta-revoluci%C3%B3n-35c63130b3d8
 ---
 
