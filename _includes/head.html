@@ -21,15 +21,17 @@
         <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/{{ layout.css }}.css" />
     {% endif %}
 
-	<!-- Twitter card -->
-	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:title" content="{{ page.title }}">
-	<meta name="twitter:description" content="{{ pageDescription }}">
+	<!-- Twitter card & Open Graph -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+	<meta property="og:title" content="{{ page.title }}" />
+	<meta property="og:description" content="{{ pageDescription }}" />
 	{% if page.image %}
-	<meta property="twitter:image" content="{{ site.baseurl }}/{{ page.image }}">
+	<meta property="og:image" content="{{ site.url }}/{{ page.image }}">
 	{% else %}
-	<meta property="twitter:image" content="{{ site.baseurl }}/{{ site.image }}">
+	<meta property="og:image" content="{{ site.url }}/{{ site.image }}">
 	{% endif %}
+
 
 	<!-- jekyll-feed -->
 	{% feed_meta %}
