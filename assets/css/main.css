@@ -86,6 +86,7 @@ a:hover {
 
 p {
     float: left;
+    width: 100%;
     margin: 17px 0 17px 0;
     line-height: 1.48em;
 }
