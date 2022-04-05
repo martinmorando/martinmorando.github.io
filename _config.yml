@@ -3,6 +3,7 @@ description: "Martín Morando, fundador de cripto.wiki. Previamente: YouShare.TV
 url: https://martinmorando.com
 language: es
 baseurl: ''
+image: 'assets/img/icons/m.png?v=2'
 
 permalink: /:title
 
@@ -20,7 +21,6 @@ sass:
 
 plugins:
   - jekyll-sitemap
-  - jekyll-seo-tag
   - jekyll-feed
 
 compress_html:
