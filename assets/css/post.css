@@ -10,3 +10,20 @@ img {
 	margin: 0 0 20px 0;
 	font-size: 1.05em;
 }
+
+#date {
+	float: left;
+	margin-right: 7px;
+}
+
+@media screen and (max-width: 600px) {
+
+	#title h1 {
+		font-size: 1.6em;
+	}
+
+	#date {
+		width: 100%;
+	}
+
+}
