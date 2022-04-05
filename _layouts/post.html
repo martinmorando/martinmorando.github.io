@@ -3,11 +3,23 @@ layout: default
 css: post
 ---
 
+{% assign src = page.source_url | split: "https://" %}
+{% assign src2 = src[1] | split: ".com" %}
+{% case src2[0] %}
+{% when 'martinmorando.medium' %}
+	{% capture source %}Medium{% endcapture %}
+{% when 'mundomorando' %}
+	{% capture source %}MundoMorando{% endcapture %}
+{% endcase %}
+
 <div id="page-content">
 	<div class="center">
 		<div id="title"><h1>{{ page.title }}</h1></div>
-		<div id="metadata">{{ page.date | date: "%b %d, %Y"}} <a href="{{ page.source_url }}">[Publicado en Medium]</a></div>
-		<div id="image"><img src="{{ site.baseurl }}/assets/img/posts/{{ page.date | date: '%Y/%m/%d' }}-{{ page.slug }}.png" alt="{{ page.title }}" /></div>
+		<div id="metadata">
+			{{ page.date | date: "%b %d, %Y"}}
+			{% if source %}<a href="{{ page.source_url }}">[Publicado en  {{ source }}]</a>{% endif %}
+		</div>
+		<div id="image"><img src="{{ site.url }}/{{ page.image }}" alt="{{ page.title }}" /></div>
 		<div class="content">{{ content }}</div>
 	</div>
 </div>

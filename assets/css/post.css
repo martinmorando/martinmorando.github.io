@@ -1,5 +1,12 @@
+img {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
 #metadata {
 	float: left;
+	width: 100%;
 	margin: 0 0 20px 0;
 	font-size: 1.05em;
 }
