@@ -107,4 +107,15 @@
         width: 100%;
     }
 
+    #blog ul li,
+    #blog ul li span,
+    #blog ul li a {
+        float: left;
+        display: block;
+    }
+
+    #blog ul > li:not(:last-of-type) {
+        margin-bottom: 20px;
+    }
+
 }
