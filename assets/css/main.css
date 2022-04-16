@@ -91,12 +91,26 @@ p {
     line-height: 1.48em;
 }
 
-h1 {
-	float: left;
-    margin-top: 10px;
-    margin-bottom: 15px;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    float: left;
     width: 100%;
-    font-size: 1.8em;
+}
+
+h1 {
+    margin-top: 10px;
+    margin-bottom: 7px;
+    font-size: 1.6em;
+}
+
+h2 {
+    margin-top: 10px;
+    margin-bottom: 7px;
+    font-size: 1.4em;
 }
 
 img {
@@ -117,15 +131,17 @@ img {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #FAFAFA;
     border-bottom: 1px solid #EEE;
     z-index: 100;
+    background-color: #FAFAFA;
 }
 
 #site-title {
-    margin: 20px 0 20px 0 !important;
+    float: left;
+    margin: 25px 0px 25px 45px !important;
 	font-family: 'Julius Sans One', sans-serif;
     font-weight: 400;
+    font-size: 1.8em;
     width: auto;
 }
 
@@ -135,7 +151,7 @@ img {
 
 #site-nav {
     float: right;
-    margin: 22px 15px 0 0;
+    margin: 26px 45px 0 0;
 }
 
 #site-nav a {    
@@ -159,7 +175,7 @@ img {
 
 #page-content {
     flex: 1;
-    padding-top: 40px;
+    padding-top: 50px;
     margin-top: 50px;
 }
 
@@ -173,4 +189,60 @@ img {
     margin-top: 20px;
     font-size: 2em;
     text-align: center;
+}
+
+#projects {
+    float: left;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+.project {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.project .img {
+    display: flex;
+}
+
+.project .img img {
+    width: 75px;
+    height: 75px;
+    margin: auto;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+
+.project .txt {
+    flex: 1;
+    padding: 15px 25px;
+}
+
+.project .title {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.project .title a {
+    text-decoration: none;
+}
+
+.project .motto {
+    margin-top: 2px;
+    margin-bottom: 10px;
+}
+
+.project .period {
+    font-size: 0.9em;
+}
+
+@media screen and (max-width: 500px) {
+
+    .body {
+        font-size: 1em;
+    }
+
 }

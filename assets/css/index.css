@@ -1,121 +1,38 @@
 #projects {
-    width: 100%;
-}
-
-.project {
-    display: flex;
-    margin-bottom: 20px;
-    width: 100%;
-    height: auto;
-    border: 1px solid #EEE;
-    border-radius: 3px;    
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
-}
-
-.p-img {
-    display: flex;
-    border-top-left-radius: 3px;
-    border-bottom-left-radius: 3px;
-    -moz-border-radius-topleft: 3px;
-    -moz-border-radius-bottomleft: 3px;
-    -webkit-border-top-left-radius: 3px;
-    -webkit-border-bottom-left-radius: 3px;    
-}
-
-.p-img img {
-    width: 100px;
-    height: 100px;
-    margin: auto;
-}
-
-.p-txt {
-    flex: 1;
-    padding: 20px 25px;
-}
-
-.project .p-title {
-    font-size: 1.3em;
-}
-
-.p-motto {
-    margin-top: 5px;
-    margin-bottom: 20px;
-}
-
-.p-period {
-    margin-top: 25px;
-    font-size: 0.9em;
-}
-
-.strike {
-    margin-right: 15px;
-    text-decoration: line-through;
-}
-
-#criptowiki .p-img {
-    background-color: #37ED86;
-}
-
-#yousharetv .p-img {
-    background-color: #000000;
-}
-
-#resumenesorg .p-img {
-    background-color: #3AB572;
-}
-
-#zecurlcom .p-img {
-    background-color: #FFFFFF;
-}
-
-#anonchat .p-img {
-    background-color: #F3F3F3;
+	border-bottom: 1px solid #EEE;
 }
 
 #blog {
-    float: left;
-    margin-top: 10px;
-    margin-bottom: 50px;
-    width: 100%;
-    font-size: 1.1em;
+	float: left;
+	margin: 20px 0;
+	width: 100%;
 }
 
-#blog ul {
-    margin: 0;
-    padding-left: 20px;
-    list-style-type: circle;
+.post {
+	float: left;
+	margin-bottom: 25px;
+	width: 100%;
 }
 
-#blog ul > li {
-    padding-bottom: 10px;
+.post .title {
+	float: left;
+	margin: 0;
+	width: 100%;
+	font-weight: bold;
 }
 
-#blog ul > li span {
-    float: left;
-    margin-top: 1px;
+.post .title a {
+	text-decoration: none;
 }
 
-#blog ul > li a {
-    margin-left: 15px;
+.post .content {
+	float: left;
+	color: #444;
 }
 
-@media screen and (max-width: 600px) {
-
-    .strike {
-        float: left;
-        width: 100%;
-    }
-
-    #blog ul li,
-    #blog ul li span,
-    #blog ul li a {
-        float: left;
-        display: block;
-    }
-
-    #blog ul > li:not(:last-of-type) {
-        margin-bottom: 20px;
-    }
-
+.post .date {
+	float: left;
+	margin-top: 7px;
+	font-size: 0.9em;
+	color: #444;
 }
