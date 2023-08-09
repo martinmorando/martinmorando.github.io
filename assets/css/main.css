@@ -131,7 +131,7 @@ img {
     position: fixed;
     top: 0;
     width: 100%;
-    border-bottom: 1px solid #EEE;
+    border-bottom: 1px solid #E5E5E5;
     z-index: 100;
     background-color: #FAFAFA;
 }
