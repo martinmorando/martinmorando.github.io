@@ -14,11 +14,13 @@ css: post
 	{% capture source %}Instagram{% endcapture %}
 {% endcase %}
 
+{% assign postDate = page.date | date: "%d/%m/%Y" %}
+
 <div id="page-content">
 	<div class="center">
 		<div id="title"><h1>{{ page.title }}</h1></div>
 		<div id="metadata">
-			<span id="date">{{ page.date | date: "%b %d, %Y"}}</span>
+			<span id="date">{{ postDate | date_spanish }}</span>
 			{% if source %}<span><a href="{{ page.source_url }}">[Publicado en  {{ source }}]</a></span>{% endif %}
 		</div>
 		<div id="image"><img src="{{ site.url }}/{{ page.image }}" alt="{{ page.title }}" /></div>
