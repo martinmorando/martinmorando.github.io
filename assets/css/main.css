@@ -138,7 +138,7 @@ img {
 
 #site-title {
     float: left;
-    margin: 20px 0px 20px 45px !important;
+    margin: 18px 0px 18px 40px !important;
 	font-family: 'Julius Sans One', sans-serif;
     font-weight: 400;
     font-size: 1.8em;
@@ -151,11 +151,11 @@ img {
 
 #site-nav {
     float: right;
-    margin: 23px 45px 0 0;
+    margin: 22px 40px 0 0;
 }
 
 #site-nav a {    
-    font-size: 1.1em;
+    font-size: 1.07em;
     text-decoration: none;
 }
 
@@ -175,8 +175,8 @@ img {
 
 #page-content {
     flex: 1;
-    padding-top: 45px;
-    margin-top: 50px;
+    padding-top: 40px;
+    margin-top: 45px;
 }
 
 #site-footer {
