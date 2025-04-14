@@ -168,8 +168,9 @@ img {
 }
 
 #site-nav span {
-    float: left;
-    margin-top: 3px;
+    float: right;
+    margin-top: 0px;
+    margin-left: 5px;
     font-size: 1.3em;
 }
 
